@@ -1,58 +1,41 @@
-# Tracking & Shipping Analytics – Operaciones Internacionales E-commerce
-Proyecto de análisis aplicado a una operación internacional de e-commerce, simulando la gestión integral de 70 órdenes desde la compra hasta la entrega al cliente final.
+# E-commerce Tracking & Shipping Analytics: Operaciones Internacionales
 
-Se realizó seguimiento a la operación de Tracking (Seller → Despacho) y Shipping (Despacho → Entrega), evaluando cumplimiento de promesa, desempeño por seller, transportadora y principales causas de incumplimiento, mediante construcción de indicadores clave (DOT, LT, CAS) y dashboard interactivo en Power BI.
+### Gestión de Visibilidad End-to-End: Del Seller a la Entrega Final
+**Herramientas:** `Power BI (Advanced DAX)` | `Excel` | `E-commerce Logistics` | `SLA Monitoring`
 
-## Objetivos
+---
 
-- Simular la gestión operativa de pedidos internacionales en entorno e-commerce.
-- Analizar el cumplimiento de promesa de entrega (Delivery On Time – DOT).
-- Evaluar Lead Time promedio por país de origen.
-- Identificar principales incidencias que afectan la operación.
-- Detectar oportunidades de mejora en sellers y transportadoras.
-- Construir dashboard ejecutivo para toma de decisiones operativas.
+## Objetivo del Proyecto
+Simular la gestión operativa integral de una cadena de suministro e-commerce internacional (70 órdenes). El proyecto se enfoca en la trazabilidad total, desde la salida del **Seller** hasta la última milla, evaluando el cumplimiento de la promesa de entrega y la eficiencia de los proveedores logísticos globales.
 
-## Estructura de Archivos
+## Metodología de Análisis (KPIs de Clase Mundial)
+Para este modelo de control, se implementaron indicadores estándar de la industria:
+1. **DOT (Delivery On Time %):** Medición exacta de pedidos entregados en la fecha pactada.
+2. **Lead Time (LT):** Análisis del ciclo de tiempo promedio por país de origen (China, USA, España).
+3. **CAS (Customer Affected Shipments %):** Identificación del volumen de órdenes con incidencias críticas que impactan la experiencia del usuario.
 
-- /data
-  - tracking_shipping_falabella.xlsx
+## Hallazgos y Diagnóstico Operativo (Insights)
+* **Alerta de Nivel de Servicio:** Se detectó un **DOT del 50%**, lo que señala una oportunidad crítica de optimización en la coordinación entre Sellers y Transportadoras.
+* **Cuellos de Botella en Origen:** El **"Retraso del Seller"** y **"Retraso en Aduanas"** representan las principales causas de incumplimiento (12 órdenes afectadas), sugiriendo la necesidad de una mejor auditoría de proveedores.
+* **Desempeño de Carriers:** A pesar de ser líderes globales, el análisis revela que **DHL (54%)** y **FedEx/UPS (48%)** presentan variaciones significativas de cumplimiento en esta ruta específica.
+* **Estacionalidad:** El pico operativo de **Marzo** demostró una correlación directa entre el aumento de volumen y la degradación del servicio.
 
-- /powerbi
-  - dashboard_tracking_shipping.pbix
+## Propuestas de Optimización Logística
+1. **Plan de Acción con Sellers:** Implementar penalizaciones o incentivos basados en el DOT para los Sellers con desempeño menor al 60% (Caso Seller_D).
+2. **Estrategia de Aduanas:** Revisar la documentación pre-alerta para mitigar los retrasos en procesos de nacionalización.
 
-## KPIs Analizados
+---
 
-- Total de órdenes procesadas
-- Delivery On Time (DOT %)
-- Lead Time promedio (LT)
-- Customer Affected Shipments (CAS %)
-- Retraso promedio (días)
-- DOT por Seller
-- DOT por Transportadora
-- Incidencias por tipo
-- Tendencia de volumen por mes
+## Estructura del Proyecto
+* **data/**: Base de datos normalizada con flujo de órdenes internacionales.
+* **powerbi/**: Dashboard interactivo con niveles de detalle:
+   * **Página 1:** Resumen Ejecutivo (Indicadores Macro).
+   * **Página 2:** Análisis Operativo (Drill-down por transportadora e incidencia).
 
-## Herramientas Utilizadas
+---
 
-Excel (limpieza de datos, cálculos y validación) | Power BI (modelado de datos, medidas DAX, visualización y dashboards) | Construcción de KPIs logísticos | Análisis operativo internacional
-
-## Principales Hallazgos
-
-- Se analizaron 70 órdenes internacionales.
-- DOT promedio de 50%, evidenciando oportunidad clara de mejora operativa.
-- CAS del 50%, indicando que la mitad de los pedidos presentó alguna afectación.
-- Lead Time promedio de 14,97 días (~15 días), consistente entre países de origen.
-- Seller_D presentó el menor desempeño con 57% de cumplimiento.
-- Las principales causas de incumplimiento fueron Retraso en Aduana y Retraso del Seller (12 órdenes afectadas).
-- DHL mostró el desempeño más bajo (54% DOT), seguido por FedEx y UPS (48%).
-- Marzo concentró el mayor volumen operativo (31 órdenes), lo que podría explicar incremento en incidencias por carga operativa.
-
-## Cómo Explorar el Proyecto
-
-- Abrir el archivo Excel ubicado en la carpeta /data para revisar la base de datos simulada.
-- Abrir el archivo .pbix en la carpeta /powerbi para visualizar el dashboard interactivo.
-- Explorar la Página 1 (Resumen Ejecutivo) para indicadores generales.
-- Analizar la Página 2 (Análisis Operativo) para identificar patrones por seller, transportadora y tipo de incidencia.
-- Utilizar filtros dinámicos para segmentar por país, seller o transportadora.
+### Enlaces de Interés
+* [Descargar Reporte en PDF](LINK_A_TU_PDF)
+* [Ver Dashboard en Power BI Desktop](https://github.com/TU_USUARIO/TU_REPO/blob/main/powerbi/dashboard_tracking_shipping.pbix)
 
 **Autor** Laura M
