@@ -35,7 +35,7 @@ Para este modelo de control, se implementaron indicadores estándar de la indust
 ---
 
 ### Enlaces de Interés
-* [Descargar Reporte en PDF](LINK_A_TU_PDF)
-* [Ver Dashboard en Power BI Desktop](https://github.com/TU_USUARIO/TU_REPO/blob/main/powerbi/dashboard_tracking_shipping.pbix)
+* [Descargar Reporte en PDF](/Power_BI/dashboard_tracking_shipping.pdf)
+* [Ver Dashboard en Power BI Desktop](/Power_BI/dashboard_tracking_shipping.pbix)
 
 **Autor** Laura M
